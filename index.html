@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+           
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #bac0cb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .profile h1 {
+            margin: 0;
+            font-size: 24px;
+            color: rgb(15, 140, 224);
+        }
+
+        .profile p {
+            margin: 5px 0;
+            color: #170b3c;
+        }
+
+        .bio {
+            margin-bottom: 20px;
+        }
+
+        .bio h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .bio p {
+            margin: 5px 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="abasssss.jpg" alt="Profile Picture">
+            <h1>Abas Iman</h1>
+            <p>Computer Science</p>
+        </div>
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>Computer Science Student at Binus University who has interest in javascript</p>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+<p id="Email" style="display: none;">Email: abasiman15@gmail.com</p>
+<button type="button" onclick="myFunction()">Contact me</button>
+            
+            
+        </div>
+    </div>
+   
+
+    <script>
+       function myFunction() {
+            var emailParagraph = document.getElementById("Email");
+            emailParagraph.style.display = "block"; 
+        }
+    </script>
+</body>
+
+</html>
